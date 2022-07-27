@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.usebootstrap.com/bootstrap/4.1.3/css/bootstrap.min.css');
+
+/* font-family: 'Raleway', sans-serif; */
+
+
+/* home */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.navbar {
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: rgb(0, 0, 0, .6) !important;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.carousel-caption h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 1.6px 1.6px 12.8px black;
+    padding-bottom: 16px;
+}
+
+.carousel-caption h3 {
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 1.6px 1.6px 8px black;
+    padding-bottom: 26px;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    border-radius: 0;
+    padding: 48px 0 32px;
+    background-color: transparent;
+    margin-bottom: -5px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: 800;
+    text-shadow: 1.6px 1.6px 12.8px black;
+}
+
+h3.heading {
+    font-size: 32px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+
+.heading-underline {
+    width: 52px;
+    height: 3.2px;
+    background-color: red;
+    margin: 0 auto 32px;
+}
+
+.categary img {
+    max-width: 100%;
+    transition: transform .5s ease;
+}
+
+.categary img:hover {
+    transform: scale(1.1);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.categary {
+    overflow: hidden;
+}
+
+.row.no-padding [class*=col-] {
+    padding: 0;
+}
+
+.card {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: -10px;
+    border: 0;
+}
+
+.card img {
+    transition: transform .5s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-body {
+    background-color: black;
+}
+
+.card-body h4 {
+    font-weight: bold;
+}
+
+.card-btn {
+    border-width: medium;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 32px 0 48px;
+    margin-top: 16px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+footer img {
+    height: 48px;
+    margin: 24px 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 24px;
+    margin: 19.2px 8px 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: red;
+}
+
+a:hover {
+    color: red;
+}
+
+hr.socket {
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+
+/* tv show page & movies page  */
+
+.container-box {
+    width: 90%;
+    margin: 90px auto;
+    display: flex;
+    padding: 20px;
+}
+
+.box {
+    height: 450px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    flex: 1;
+    transition: 2s;
+}
+
+.box-text {
+    text-align: center;
+    padding-top: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1.6px 1.6px 14px black;
+}
+
+.box:hover {
+    flex: 4;
+    text-shadow: 2px 2px 14px black;
+    cursor: pointer;
+}
+
+.box-extra-margin {
+    margin-top: 50px;
+}
+
+.extra-padding-header {
+    padding-top: 25px;
+}
+
+
+/* latest page & upcoming */
+
+.latest-bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/tvseries.jpg);
+    background-position: center;
+}
+
+.container-card {
+    margin-top: 100px !important;
+}
+
+.latest-card {
+    border: none;
+    outline: none;
+    background-color: rgba(41, 40, 40, 0.89);
+    border-radius: 20px;
+    transition: transfrom .3s;
+}
+
+.card-size {
+    width: 300px;
+    height: 200px;
+}
+
+.latest-card:hover {
+    transform: translateY(-15px);
+    transition: transfrom .3s;
+    cursor: pointer;
+}
+
+.text1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.info {
+    line-height: 17px;
+}
+
+.time {
+    color: white;
+}
+
+.star {
+    color: gold;
+}
+
+
+/* about us */
+
+.heading-aboutus {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    padding-top: 75px;
+}
+
+.heading-underline-aboutus {
+    width: 52px;
+    height: 3.2px;
+    background-color: red;
+    width: 100px;
+    height: 3.2px;
+    background-color: red;
+    margin: -3px auto;
+}
+
+.aboutus-para {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.heading-develepers {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    padding-top: 75px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-aboutus {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    margin: 10px;
+    padding: 30px;
+    max-width: 40%;
+    cursor: pointer;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgba(32, 32, 32, 0.87);
+    text-align: center;
+}
+
+.teams img {
+    height: 280px;
+    width: 280px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+}
+
+.teams img:hover {
+    transform: scale(1.1);
+}
+
+.name {
+    padding: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: #888 !important;
+    padding-bottom: 12px;
+}
+
+.index-num {
+    font-family: sans-serif !important;
+}
+
+.contact-num {
+    font-family: sans-serif !important;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+.social-link {
+    margin: 20px;
+}
+
+.social-link a {
+    font-size: 25px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+    color: white;
+}
+
+.social-link a:hover {
+    color: red !important;
+    transform: scale(1.5);
+}
+
+.social-link a i {
+    color: white !important;
+}
+
+.social-link a i:hover {
+    color: red !important;
+}
+
+
+/* more page */
+
+.latest-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    max-width: 300px;
+    margin: 0 16px 16px 16px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: relative;
+    overflow: hidden;
+    transition: transfrom .3s;
+}
+
+.item:hover {
+    transform: translateY(-15px);
+    transition: transfrom .3s;
+    cursor: pointer;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item h5 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.info-latest p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rating-more {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+.date {
+    text-align: center;
+    color: white;
+}
+
+.rating-more {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    /* home page */
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.884) !important;
+    }
+    .carousel-item {
+        height: 50vh;
+    }
+    .carousel-caption h1 {
+        font-size: 25px;
+        letter-spacing: 1.4px;
+        padding-bottom: 3px;
+    }
+    .carousel-caption h3 {
+        font-size: 13px;
+        padding-bottom: 9px;
+    }
+    .btn-lg {
+        font-size: 10px;
+        border-width: medium;
+        border-radius: 50px;
+    }
+    h3.heading {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    /* latest & upcoming */
+    .card-size {
+        width: 300px;
+        height: 200px;
+    }
+    /* about us */
+    .teams {
+        max-width: 100%;
+    }
+    /* tv and movie pages */
+    .box {
+        height: 150px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+        flex: 1;
+        transition: 2s;
+    }
+    .box-text {
+        text-align: center;
+        padding-top: 50%;
+        font-size: 10px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        text-shadow: 1.6px 1.6px 14px black;
+    }
+    .box:hover {
+        flex: 3;
+        text-shadow: 2px 2px 14px black;
+        cursor: pointer;
+    }
+}
